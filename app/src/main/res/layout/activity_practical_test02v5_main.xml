@@ -130,6 +130,7 @@ tools:context="ro.pub.cs.systems.eim.practicaltest02v5.PracticalTest02v5MainActi
         android:layout_rowSpan="2"
         android:layout_column="1"/>
 
+
 </GridLayout>
 
     <Spinner
@@ -139,15 +140,22 @@ tools:context="ro.pub.cs.systems.eim.practicaltest02v5.PracticalTest02v5MainActi
         android:entries="@array/information_types" />
 
     <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="10"/>
+        android:layout_height="match_parent">
 
-</ScrollView>
+<!--        <TextView-->
+<!--            android:id="@+id/result"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:maxLines="10" />-->
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+    </ScrollView>
 
 </LinearLayout>
